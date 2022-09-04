@@ -69,15 +69,15 @@ void heapify(int nodeIndex)
             heapify(leftChild(nodeIndex));
         }
     }
-    /// right child only
-    else if(leftChild(nodeIndex)==null && rightChild(nodeIndex)!=null)
+    /// right child only, not possible to have only right child
+    /*else if(leftChild(nodeIndex)==null && rightChild(nodeIndex)!=null)
     {
         if(heap[nodeIndex]<heap[rightChild(nodeIndex)])
         {
             swap(heap[nodeIndex], heap[rightChild(nodeIndex)]);
             heapify(rightChild(nodeIndex));
         }
-    }
+    }*/
     /// left and right child
     else
     {
